@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Личный кабинет CFA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+{% extends "base.html" %}
+<div class="container">
+    <div class="mb-3">
+{% block content %}
+
+<h1 align="center"><picture>  <img src="https://media.tenor.com/JfiEuZyOJX4AAAAi/key-turning.gif" alt="Sweeper" style="margin-left: 16px;" data-astro-cid-sr76vcv2="" width="130" height="130" loading="lazy" decoding="async"> </picture></h1>
+<a class="navbar-brand"><h1 align="center">Приветствую, в CubeFel Account <span class="badge rounded-pill text-bg-primary">BETA</span> , {{ request.user }} </h1></a>
+<a class="navbar-brand" href="/cfa/logout"><h3 align="center"><button type="button" class="btn btn-outline-danger">Выйти</button></h3></a>
+
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Меню навигации CFA</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>Здесь вы можете быстро переходить между страницами.</div><h4>ㅤ</h4>
+    
+    <h3 align="center"><a href="/cfa/" class="btn btn-primary">Главная страница</a></h3>
+    <h3 align="center"><a href="/cfa/my" class="btn btn-primary">Личный кабинет</a></h3>
+    <h3 align="center"><a href="/cfa/login" class="btn btn-primary">Меню входа</a></h3>
+    <h3 align="center"><a href="https://cubefel.ru/cfa/info" class="btn btn-primary">Инфо о проекте</a></h3>
+   <source srcset="https://terminator.aeza.net/_astro/fan.ropKkb2V_1Izs1m.webp" type="image/webp"> <img src="https://terminator.aeza.net/_astro/fan.ropKkb2V_ZBagrK.png" alt="Fan. Just a regular fan. No jokes" style="align-self: flex-end; margin-bottom: 13px; margin-right: 15px;" data-astro-cid-ssfzsv2f="" width="45" height="53" loading="lazy" decoding="async">    
+  </div>
+</div>
+
+    <h4>ㅤ</h4>
+        <div class="row">
+    <div class="card text-center">
+  <div class="card-header">
+    CubeFel Account
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Это бета версия CFA</h5>
+    <p class="card-text">До официального релиза может много чего изменится. Просим обратить на это внимание. Если вы нашли баги, просим сообщить о них разработчику.</p>
+    <a href="//t.me/cubzx" class="btn btn-primary">Связь с разработчиком</a>
+  </div>
+  <div class="card-footer text-body-secondary">
+    - @cubzx
+  </div>
+</div>
+<h3>ㅤ</h3>
+<div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Список приложений, поддерживающих авторизацию CFA</h5>
+        <p class="card-text">(тут пока пусто и грустно)</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Что нового?</h5>
+        <p class="card-text">Самое первое обновление CFA. Добавлен базовый функционал: </p>
+        <p class="card-text">Система аккаунтов, личный кабинет, авторизация в приложен
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+    </div>
+    </div>
+{% endblock content %}
+</body>
+</html>
